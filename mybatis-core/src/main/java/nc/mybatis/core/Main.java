@@ -1,4 +1,4 @@
-package nc.mybatis;
+package nc.mybatis.core;
 
 public class Main {
     public static void main(String[] args) {
