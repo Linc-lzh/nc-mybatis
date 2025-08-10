@@ -24,7 +24,7 @@ public class ApiTest {
 
             SqlSession session = sqlMapper.openSession();
             try {
-                User user = session.selectOne("cn.bugstack.mybatis.test.dao.IUserDao.queryUserInfoById", 1L);
+                User user = session.selectOne("nc.mybatis.test.dao.IUserDao.queryUserInfoById", 1L);
                 System.out.println(JSON.toJSONString(user));
             } finally {
                 session.close();
@@ -48,7 +48,7 @@ public class ApiTest {
             try {
                 User req = new User();
                 req.setUserId("10001");
-                List<User> userList = session.selectList("cn.bugstack.mybatis.test.dao.IUserDao.queryUserList", req);
+                List<User> userList = session.selectList("nc.mybatis.test.dao.IUserDao.queryUserList", req);
                 System.out.println(JSON.toJSONString(userList));
             } finally {
                 session.close();
