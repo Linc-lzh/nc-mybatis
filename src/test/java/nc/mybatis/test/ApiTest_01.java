@@ -12,7 +12,7 @@ import java.io.Reader;
 import java.util.List;
 
 
-public class ApiTest {
+public class ApiTest_01 {
 
     @Test
     public void test_queryUserInfoById() {
@@ -58,5 +58,7 @@ public class ApiTest {
             e.printStackTrace();
         }
     }
+
+
 
 }
